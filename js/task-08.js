@@ -6,8 +6,8 @@ formEl.addEventListener("submit", processFormEl);
         event.preventDefault();
             const {
                 elements: {email, password} } = event.currentTarget;
-                if(email.value === "" || password.vaue === "") {
-                    return alert("Please fill out all the fields of the form");
+                if(email.value === "" || password.value === "") {
+                 alert("Please fill out all the fields of the form");
             }
 
             const formData = {};
