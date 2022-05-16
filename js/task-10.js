@@ -28,6 +28,7 @@ function createBoxes() {
     }
 };
 
-function destroyBoxes() {
+function destroyBoxes(event) {
   refs.boxes.innerHTML = "";
+  refs.numberInput.value = "";
 };
