@@ -1,9 +1,6 @@
-const allItemsLength = (document.querySelectorAll('li.item')).length;
-const message1 = `Number of categories: ${allItemsLength}`;
+const allItems = (document.querySelectorAll('#categories li.item'));
+const message1 = `Number of categories: ${allItems.length}`;
 console.log(message1);
-
-const allItems = (document.querySelectorAll('li.item'));
-
 
 const showItems = (items => {
     items.forEach(item => {
@@ -13,6 +10,6 @@ const showItems = (items => {
         const allLiWithin = (item.querySelectorAll('li')).length;
         console.log(`Elements: ${allLiWithin}`);
     })
-})
+});
 
 showItems(allItems);

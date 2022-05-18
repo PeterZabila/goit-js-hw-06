@@ -19,7 +19,7 @@ function createBoxes() {
     const inputVal = refs.numberInput.value;
     const boxsize = 30;
 
-    for(let i = 0; i <= inputVal; i += 1) {
+    for(let i = 0; i < inputVal; i += 1) {
       const newEl = document.createElement("div");
         newEl.style.backgroundColor = getRandomHexColor();
         newEl.style.width = `${boxsize + i * 10}px`;
